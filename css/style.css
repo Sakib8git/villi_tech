@@ -914,6 +914,127 @@ body {
   transform: rotate(0deg); 
 }
 
+/*! contact us part ----------------*/
+/* --- Contact Section Styles --- */
+.contact-section {
+  padding: 100px 0;
+  background-color: #FFFFFF;
+}
+
+.contact-container {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0px 120px;
+}
+
+/* cnct lft */
+.contact-info {
+  flex: 1;
+}
+
+.contact-info .section-title {
+  font-size: 36px;
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+
+.info-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.info-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 24px;
+  background: #FFFFFF;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); /* হালকা শ্যাডো */
+}
+
+.info-icon {
+  width: 50px;
+  height: 50px;
+  background-color: #E6F9F9;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-icon img {
+  width: 24px;
+}
+
+.info-text h4 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.info-text p {
+  font-size: 14px;
+  color: #718096;
+}
+
+/* frm r8  */
+.contact-form-wrapper {
+  flex: 1;
+  min-height: 600px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.contact-form-card {
+  background: #FFFFFF;
+  padding: 40px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-card h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* input */
+form input, form textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #E2E8F0;
+  border-radius: 8px;
+  background-color: #F8FAFC;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 16px;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+}
 
 
 
@@ -1211,7 +1332,7 @@ body {
   transition: transform 0.3s ease;
 }
 
-/* নির্দিষ্ট ইমেজের হাইট কন্ট্রোল - ডিজাইন অনুযায়ী */
+
 
 /* Left column 1st image */
 .work-gallery-column:nth-child(1) .work-gallery-item:nth-child(1) img {
@@ -1246,7 +1367,7 @@ body {
 
 
 /*! faq */
-/* --- FAQ Responsive (Mobile View) --- */
+
 @media screen and (max-width: 992px) {
   .faq-section {
     padding: 40px 20px; 
@@ -1295,5 +1416,15 @@ body {
     margin-top: 20px;
   }
 }
+
+/* cnct us */
+.contact-container {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .contact-form-wrapper {
+    width: 100%;
+    padding: 20px;
+  }
 }
 
