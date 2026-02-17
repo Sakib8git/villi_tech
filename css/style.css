@@ -735,7 +735,7 @@ body {
   transition: transform 0.3s ease;
 }
 
-/* নির্দিষ্ট ইমেজের হাইট কন্ট্রোল - ডিজাইন অনুযায়ী */
+
 
 /* Left column 1st image */
 .work-gallery-column:nth-child(1) .work-gallery-item:nth-child(1) img {
@@ -846,7 +846,7 @@ body {
 /*! faq part */
 /* --- FAQ Section Styles --- */
 .faq-section {
-  background-color: #E6F9F9; /* লাইট ব্যাকগ্রাউন্ড */
+  background-color: #E6F9F9; 
   padding: 100px 0;
   
 }
@@ -871,7 +871,7 @@ body {
 
 
 .faq-item {
-  border-bottom: 1px solid #A0AEC0; /* ডিভাইডার লাইন */
+  border-bottom: 1px solid #A0AEC0; /
   padding: 24px 0;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -884,6 +884,8 @@ body {
   font-size: 20px;
   font-weight: 700;
   color: #1A202C;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .arrow-icon {
@@ -1410,98 +1412,79 @@ form input, form textarea {
     padding: 0px 0px;
   }
 
+/* choise part */
+.choice {
+        padding: 60px 20px; 
+        
+    }
 
+    .choice-container {
+        flex-direction: column; 
+        padding: 0;
+        gap: 32px;
+        text-align: center; 
+    }
 
+   
+    .choice-image {
+        width: 100%;
+        
+    }
+
+    .choice-media-inner {
+        max-width: 100%;
+        height: 300px; 
+        margin: 0 auto;
+    }
+
+    
+    .choice-content {
+        width: 100%;
+        order: 2; 
+        text-align: center;
+    }
+
+    .choice-title {
+        font-size: 32px;
+        margin-bottom: 16px;
+    }
+
+    .choice-description {
+        font-size: 16px;
+        margin-bottom: 24px;
+        max-width: 100%;
+    }
+
+    .btn-primary.book-now {
+        margin: 0 auto; 
+    }
 
   /* work gallary----------- */
 
 .gallery-container{
   padding: 10px;
 }
+  .gallery-grid {
+    display: flex !important;
+    flex-direction: column !important; /* ইমেজগুলো সব নিচে নিচে আসবে */
+    gap: 20px;
+  }
 
-  .gallery-text-center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin-bottom: 48px;
-  width: 100%;
-}
+  .work-gallery-column {
+    width: 100% !important;
+    gap: 20px;
+  }
 
-.gallery-text-center .section-title {
-  max-width: 800px;
-  margin-bottom: 16px;
-}
-
-.gallery-text-center .section-subtitle {
-  max-width: 650px;
-  margin: 0 auto;
-}
-
-/* .gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 19px;
-  width: 100%;
-} */
-/* 
-.work-gallery-column {
-  display: flex;
-  flex-direction: column;
-  gap: 19px;
-} */
-
-.work-gallery-item {
-  width: 100%;
-  overflow: hidden;
-  border-radius: 8px; /* */
-}
-
-.work-gallery-item img {
-  width: 100%;
-  height: 250px; /* ডিফল্ট হাইট */
-  object-fit: cover; /* */
-  display: block;
-  transition: transform 0.3s ease;
-}
-
-
-
-/* Left column 1st image */
-.work-gallery-column:nth-child(1) .work-gallery-item:nth-child(1) img {
-  height: 164px;
-}
-
-/* Middle column items */
-.work-gallery-column:nth-child(2) .work-gallery-item:nth-child(2) img {
-  height: 147px;
-}
-.work-gallery-column:nth-child(2) .work-gallery-item:nth-child(3) img {
-  height: 154px;
-}
-
-/* Right column 1st image */
-.work-gallery-column:nth-child(3) .work-gallery-item:nth-child(1) img {
-  height: 144px;
-}
-
-/* Hover Effect */
-.work-gallery-item:hover img {
-  transform: scale(1.05);
-}
-
-
-
-/* testi */
-.testimonials-section {
-  padding:  10px;
-}
+  .work-gallery-item img {
+    height: 350px !important; 
+    width: 100% !important;
+  }
 
 
 
 /*! faq */
 
-@media screen and (max-width: 992px) {
+
   .faq-section {
     padding: 40px 20px; 
   }
@@ -1548,7 +1531,7 @@ form input, form textarea {
     cursor: pointer;
     margin-top: 20px;
   }
-}
+
 
 /*! cnct us */
 .contact-container {
@@ -1562,11 +1545,11 @@ form input, form textarea {
 
 
 /*! footer */
-.gallery-grid {
+/* .gallery-grid {
         display: flex !important;
         flex-direction: column !important;
         gap: 20px;
-    }
+    } */
     .work-gallery-column {
         width: 100% !important;
         gap: 20px;
