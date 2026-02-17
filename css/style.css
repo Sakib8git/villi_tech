@@ -20,9 +20,7 @@
   padding: var(--section-padding) 0;
 }
 /* ---------------------------------------------- */
-h1,
-h2,
-h3 {
+h1 {
   font-family: var(--font-main);
   font-weight: 900; /* Inter Black */
 }
@@ -305,7 +303,6 @@ body {
 }
 
 .partner-image {
-  /* ইমেজ সেকশনকে বেশি জায়গা দেওয়ার জন্য */
   flex: 1.2;
 }
 
@@ -395,34 +392,384 @@ body {
 
 .logo-bar-container {
   display: flex;
-  width: max-content; 
+  width: max-content;
   align-items: center;
-  gap: 30px; 
-  padding: 0 40px; 
+  gap: 30px;
+  padding: 0 40px;
   animation: scroll-left 10s linear infinite;
 }
 
 .logo-item {
-  flex-shrink: 0; 
+  flex-shrink: 0;
 }
 
 .logo-item img {
   width: 170px;
   height: 45px;
   object-fit: contain;
- 
 }
-
 
 @keyframes scroll-left {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); } /* অর্ধেক সরালেই লুপ পূর্ণ হবে */
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/*! program part------------------------- */
+/* --- Affiliate Section Styles --- */
+.affiliate {
+  width: 100%;
+  min-height: 972px;
+  background-color: #ffffff;
+  padding: 80px 120px;
+  opacity: 1;
+}
+
+.affiliate-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  align-items: center;
+}
+
+/* Header Typography */
+.affiliate-header {
+  text-align: center;
+  max-width: 800px;
+}
+
+.affiliate-header h2 {
+  font-family: var(--font-secondary);
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 1.2;
+  color: var(--text-dark);
+  margin-bottom: 24px;
+}
+
+.section-subtitle {
+  font-family: var(--font-secondary);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text-gray);
+}
+
+/* Grid Layout */
+.affiliate-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 19px;
+  width: 100%;
+}
+
+.affiliate-card {
+  max-width: 387px;
+  background: #f4f4f5;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.affiliate-card:hover {
+  transform: translateY(-10px);
+}
+
+.card-thumb img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 32px 24px;
+}
+
+.card-body h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: var(--text-dark);
+}
+
+.card-body p {
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--text-gray);
+}
+
+/* Footer Button */
+.affiliate-footer {
+  margin-top: 20px;
+}
+
+/*! get paid part ---------------------------------------------*/
+/* --- Get Paid Section Styles --- */
+.get-paid {
+  width: 100%;
+  /* min-height: 892px;  */
+  background-color: #ffffff;
+  padding: 80px 120px; 
+  opacity: 1; 
+}
+
+.get-paid-container {
+  max-width: 1440px; 
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 48px; 
+  align-items: center;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0px 120px;
+}
+
+/* Banner Image Setup */
+.get-paid-banner {
+  width: 100%;
+  height: 500px; 
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Overlay */
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  text-align: center;
+}
+
+.banner-text h2 {
+  font-family: var(--font-main);
+  font-size: 24px;
+  font-weight: 500; /* Medium */
+  line-height: 1.35; /* 135% */
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase; /* */
+  color: #ffffff;
+
+  font-style: normal;
+  max-width: 900px;
+  margin: 0 auto 20px auto;
+}
+
+.banner-text p {
+  font-family: var(--font-secondary);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: 0%; /* */
+  text-align: center; /* */
+
+ 
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+/* Footer Content Styling */
+.get-paid-footer {
+  text-align: center;
+  max-width: 900px;
+}
+
+.get-paid-footer h3 {
+ 
+  font-family: var(--font-main); /* */
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase; /* */
+  color: var(--text-dark);
+
+  max-width: 900px;
+  margin: 0 auto 32px auto;
+  font-style: normal;
+}
+/*! Choice part----------------------------------- */
+/* --- Choice Section Styles --- */
+.choice {
+  width: 100%;
+  min-height: 701px;
+  background-color: #ffffff;
+  padding: 80px 0;
+}
+
+.choice-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 120px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 48px;
+  width: 100%;
+}
+
+/* Image Area */
+.choice-image {
+  width: 50%;
+  flex-shrink: 0;
+}
+
+.choice-media-inner {
+  position: relative;
+  width: 100%;
+  max-width: 540px;
+  height: 541px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.choice-media-inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Play Button Overlay */
+.choice-play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+/* Text Area */
+.choice-content {
+  width: 50%;
+  flex-shrink: 0;
+  text-align: left;
+}
+
+.choice-title {
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 1.1;
+  margin-bottom: 24px;
+}
+
+.choice-description {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+/*! gallary --------------------*/
+
+.gallery-text-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 48px;
+  width: 100%;
+}
+
+.gallery-text-center .section-title {
+  max-width: 800px;
+  margin-bottom: 16px;
+}
+
+.gallery-text-center .section-subtitle {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-auto-rows: 250px;  */
+  gap: 19px;
+  width: 100%;
+}
+.work-gallery-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+/* .left1 {
+  max-height: 387px;
+} */
+.gallery-item {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; 
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+/* l1 img */
+.work-gallery-column:nth-child(1) .gallery-item:nth-child(1) img {
+  height: 354px;
+}
+.work-gallery-column:nth-child(2) .gallery-item:nth-child(2) img {
+  height: 247px;
+}
+
+/* m3 img */
+.work-gallery-column:nth-child(2) .gallery-item:nth-child(3) img {
+  height: 354px;
+}
+
+/* r1 img */
+.work-gallery-column:nth-child(3) .gallery-item:nth-child(1) img {
+  height: 354px;
+}
+
+/* baki sob*/
+.gallery-item img {
+  height: 250px; 
 }
 
 
+/* @media screen and (max-width: 992px) {
+  .gallery-grid {
+    flex-direction: column; 
+  }
+
+  .gallery-item img {
+    height: 300px !important; 
+  }
+} */
 
 /*!note: responsive-------------------------------------------- */
-/* Responsive for Hero */
+/*? Hero------------- */
 @media (max-width: 992px) {
   .hero-container {
     flex-direction: column;
@@ -532,17 +879,16 @@ body {
 
   .logo-bar {
     width: 100%;
-    min-height: 72px; 
-    padding: 24px 20px; 
+    min-height: 72px;
+    padding: 24px 20px;
   }
 
   .logo-bar-container {
-    max-width: 440px; 
+    max-width: 440px;
     padding-left: 20px;
     padding-right: 20px;
-    gap: 16px; 
-    justify-content: center; 
-   
+    gap: 16px;
+    justify-content: center;
   }
 
   .logo-item img {
@@ -552,5 +898,110 @@ body {
     opacity: 1;
     transform: rotate(0deg);
     object-fit: contain;
+  }
+
+  /*! program part------------- */
+
+  .section-title {
+    font-family: var(--font-secondary);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0%;
+    text-align: center;
+    font-style: normal;
+    margin-bottom: 24px;
+  }
+
+  .affiliate-header h2 {
+    font-size: 32px;
+  }
+  /* .title-underline {
+    margin: 0 auto 24px auto;
+  } */
+
+  .affiliate {
+    padding: 30px 20px;
+  }
+  .affiliate-container {
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .affiliate-grid {
+    display: flex;
+    grid-template-columns: none;
+    width: max-content;
+    gap: 24px;
+    animation: affiliate-scroll 25s linear infinite;
+  }
+
+  .affiliate-card {
+    width: 318px;
+    flex-shrink: 0;
+  }
+
+  @keyframes affiliate-scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-30%);
+    }
+  }
+
+  .affiliate-container:hover .affiliate-grid {
+    animation-play-state: paused;
+  }
+  /*!------------------------------- get paid */
+
+  .get-paid {
+    padding: 40px 20px;
+  }
+
+  .get-paid-banner {
+    height: 300px;
+  }
+
+  .banner-text h2,
+  .get-paid-footer h3 {
+    font-size: 18px;
+  }
+  .banner-text h2 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.35;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: uppercase; /* */
+
+    /* কন্টেন্ট কন্ট্রোল */
+    padding: 0 10px;
+    margin-bottom: 24px;
+    font-style: normal;
+  }
+  .banner-text p {
+    font-family: "Poppins", sans-serif; /* */
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: 0%;
+    text-align: center;
+
+    max-width: 90%;
+    margin: 0 auto;
+    opacity: 0.9;
+  }
+
+  .get-paid-footer h3 {
+    font-size: 16px;
+    line-height: 1.35; /* 135% */
+    padding: 0 10px;
+    margin-bottom: 24px;
+    /* color: red; */
+  }
+
+  .get-paid-container {
+    padding: 0px 0px;
   }
 }
