@@ -274,7 +274,7 @@ body {
 }
 
 .info-bar p {
-  font-family: var(--font-secondary); 
+  font-family: var(--font-secondary);
   font-size: 24px;
   font-weight: 500;
   line-height: 1.6;
@@ -282,6 +282,101 @@ body {
   max-width: var(--container-width);
   margin: 0 auto;
   padding: 0px 120px;
+  text-align: center;
+}
+
+/* !partner sec */
+/* Partner Section Styles */
+.partner {
+  background-color: #ffffff;
+}
+
+.partner-container {
+  display: flex;
+  max-width: var(--container-width); /* 1440px */
+  margin: 0 auto;
+  align-items: center;
+  gap: 80px;
+  padding: 80px var(--side-padding); /* */
+}
+
+.partner-image {
+  /* ইমেজ সেকশনকে বেশি জায়গা দেওয়ার জন্য */
+  flex: 1.2;
+}
+
+.partner-image img {
+  width: 100%;
+  height: auto;
+  /* max-width: 660px;  */
+  height: 576px;
+  border-radius: 20px;
+  display: block;
+  object-fit: cover;
+}
+
+.partner-content {
+  flex: 1;
+}
+
+.section-title {
+  font-family: var(--font-main);
+  font-size: 40px;
+  font-weight: 900;
+  color: var(--text-dark);
+  margin-bottom: 10px;
+}
+
+.title-underline {
+  width: 60px;
+  height: 4px;
+  background-color: var(--primary-teal);
+  margin-bottom: 25px;
+}
+
+.partner-description {
+  font-family: var(--font-secondary);
+  font-size: 16px;
+  color: var(--text-gray);
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+/* Checklist Styling */
+.partner-list {
+  list-style: none;
+}
+
+.partner-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  color: var(--text-dark);
+  line-height: 1.4;
+}
+
+.check-icon {
+  min-width: 24px;
+  height: 24px;
+  background-color: var(--primary-teal);
+  border-radius: 50%;
+  position: relative;
+  display: inline-block;
+}
+
+/* CSS Tick Mark */
+.check-icon::after {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
 }
 
 /*!note: responsive-------------------------------------------- */
@@ -301,6 +396,7 @@ body {
     height: 400px;
   }
 }
+
 /* --- Respons moba --- */
 @media (max-width: 768px) {
   .hero-container {
@@ -339,9 +435,56 @@ body {
   }
 
   .info-bar p {
+    padding: 0 20px;
     font-size: 16px;
+    max-width: 100%;
     line-height: 1.5;
-    max-width: var(--container-width);
-    margin: 0 auto;
+  }
+
+  /*!------------------------- partner part */
+  .partner-container {
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 32px;
+  }
+
+  .partner-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .partner-image img {
+    /* আপনার দেওয়া মেজারমেন্ট অনুযায়ী */
+    width: 400px;
+    height: 267px;
+    max-width: 100%; /* ছোট ফোনের স্ক্রিনে যেন ইমেজ ভেঙে না যায় */
+    border-radius: 8px; /* radii/small সাধারণত 8px হয় */
+    object-fit: cover;
+  }
+
+  .partner-content {
+    /* আপনার দেওয়া মেজারমেন্ট অনুযায়ী */
+    width: 400px;
+    max-width: 100%;
+    min-height: 467px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px; /* টেক্সট এলিমেন্টগুলোর মাঝখানের গ্যাপ */
+    text-align: left; /* ফিগমা অনুযায়ী টেক্সট বামেই থাকবে */
+  }
+
+  .section-title {
+    font-size: 32px; /* মোবাইলে টাইটেল একটু ছোট করা ভালো */
+    margin-bottom: 0; /* গ্যাপ ভেরিয়েবল দিয়ে কন্ট্রোল হচ্ছে */
+  }
+
+  .partner-description,
+  .partner-list {
+    margin-bottom: 0; /* গ্যাপ ভেরিয়েবল দিয়ে কন্ট্রোল হচ্ছে */
+  }
+
+  .partner-list li {
+    font-size: 14px; /* মোবাইলে পড়ার সুবিধার জন্য */
   }
 }
