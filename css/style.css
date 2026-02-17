@@ -759,6 +759,93 @@ body {
 .work-gallery-item:hover img {
   transform: scale(1.05);
 }
+/*! testi part--------------------- */
+/* --- Testimonial Marquee Styles --- */
+.testimonials-section {
+  padding: 80px 0;
+  overflow: hidden; 
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0px 120px;
+}
+
+
+.testimonial-marquee {
+  width: 100%;
+  padding: 20px 0;
+  position: relative;
+}
+
+.marquee-content {
+  display: flex;
+  gap: 30px;
+  width: max-content;
+  animation: marqueeScroll 25s linear infinite; 
+}
+
+.marquee-content:hover {
+  animation-play-state: paused;
+}
+
+
+@keyframes marqueeScroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); } 
+}
+
+
+.testimonial-card {
+  width: 380px;
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.stars {
+  font-size: 20px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.review-text {
+  font-family: var(--font-secondary);
+  font-size: 15px;
+  line-height: 1.6;
+  color: #4A5568;
+  margin-bottom: 25px;
+}
+
+.client-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.client-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.client-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1A202C;
+  margin: 0;
+}
+
+.client-role {
+  font-size: 14px;
+  color: #718096;
+  margin: 0;
+}
+
+
+
+
 
 
 
@@ -1079,5 +1166,12 @@ body {
   transform: scale(1.05);
 }
 
+
+
+/* testi */
+.testimonials-section {
+  
+  padding:  10px;
+}
 }
 
