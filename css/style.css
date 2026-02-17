@@ -2,7 +2,7 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"); */
 :root {
   /* Colors */
-  --primary-teal: #00C7B4;
+  --primary-teal: #00c7b4;
   --bg-light-teal: #e5fffd;
   --text-dark: #1a2b3c;
   --text-gray: #555;
@@ -385,43 +385,41 @@ body {
 /* !tape logo------------------------------------------ */
 /* --- Logo Bar Styles --- */
 .logo-bar {
-  
-  width: 100%; 
-  min-height: 90px; 
+  width: 100%;
+  min-height: 90px; /* লার্জ স্ক্রিন মেজারমেন্ট */
   background-color: var(--primary-teal);
-  opacity: 1; 
-  padding-top: 24px; 
-  padding-bottom: 24px;
-  /* margin-bottom: 10px; */
-
+  overflow: hidden; /* মারকিউ এর বাইরের অংশ হাইড করার জন্য জরুরি */
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
 .logo-bar-container {
   display: flex;
-  max-width: 1440px; 
-  width: 100%;
-  margin: 0 auto;
-
-  padding-left: 120px; 
-  padding-right: 120px;
-
-  justify-content: space-between; 
+  width: max-content; 
   align-items: center;
+  gap: 30px; 
+  padding: 0 40px; 
+  animation: scroll-left 10s linear infinite;
+}
+
+.logo-item {
+  flex-shrink: 0; 
 }
 
 .logo-item img {
-  
-  width: 170px; 
-  height: 45px; 
+  width: 170px;
+  height: 45px;
   object-fit: contain;
-  opacity: 1;
-  
-
-  
+ 
 }
+
+
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* অর্ধেক সরালেই লুপ পূর্ণ হবে */
+}
+
+
 
 /*!note: responsive-------------------------------------------- */
 /* Responsive for Hero */
@@ -499,36 +497,60 @@ body {
   }
 
   .partner-image img {
-    /* আপনার দেওয়া মেজারমেন্ট অনুযায়ী */
     width: 400px;
     height: 267px;
-    max-width: 100%; /* ছোট ফোনের স্ক্রিনে যেন ইমেজ ভেঙে না যায় */
-    border-radius: 8px; /* radii/small সাধারণত 8px হয় */
+    max-width: 100%;
+    border-radius: 8px;
     object-fit: cover;
   }
 
   .partner-content {
-    /* আপনার দেওয়া মেজারমেন্ট অনুযায়ী */
     width: 400px;
     max-width: 100%;
     min-height: 467px;
     display: flex;
     flex-direction: column;
-    gap: 24px; /* টেক্সট এলিমেন্টগুলোর মাঝখানের গ্যাপ */
-    text-align: left; /* ফিগমা অনুযায়ী টেক্সট বামেই থাকবে */
+    gap: 24px;
+    text-align: left;
   }
 
   .section-title {
-    font-size: 32px; /* মোবাইলে টাইটেল একটু ছোট করা ভালো */
-    margin-bottom: 0; /* গ্যাপ ভেরিয়েবল দিয়ে কন্ট্রোল হচ্ছে */
+    font-size: 32px;
+    margin-bottom: 0;
   }
 
   .partner-description,
   .partner-list {
-    margin-bottom: 0; /* গ্যাপ ভেরিয়েবল দিয়ে কন্ট্রোল হচ্ছে */
+    margin-bottom: 0;
   }
 
   .partner-list li {
-    font-size: 14px; /* মোবাইলে পড়ার সুবিধার জন্য */
+    font-size: 14px;
+  }
+
+  /*! tape---part-------------------------- */
+
+  .logo-bar {
+    width: 100%;
+    min-height: 72px; 
+    padding: 24px 20px; 
+  }
+
+  .logo-bar-container {
+    max-width: 440px; 
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 16px; 
+    justify-content: center; 
+   
+  }
+
+  .logo-item img {
+    width: 96.63px;
+    /* width: 98.34px; */
+    height: 24px;
+    opacity: 1;
+    transform: rotate(0deg);
+    object-fit: contain;
   }
 }
