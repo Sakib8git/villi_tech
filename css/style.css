@@ -2,7 +2,7 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"); */
 :root {
   /* Colors */
-  --primary-teal: #00b4b4;
+  --primary-teal: #00C7B4;
   --bg-light-teal: #e5fffd;
   --text-dark: #1a2b3c;
   --text-gray: #555;
@@ -157,6 +157,10 @@ body {
     display: flex;
   }
 }
+
+.highlight {
+  color: var(--primary-teal);
+}
 /*! ------------hero------------- */
 
 .hero {
@@ -285,7 +289,7 @@ body {
   text-align: center;
 }
 
-/* !partner sec */
+/* !partner sec--------------------------- */
 /* Partner Section Styles */
 .partner {
   background-color: #ffffff;
@@ -377,6 +381,46 @@ body {
   border: solid white;
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
+}
+/* !tape logo------------------------------------------ */
+/* --- Logo Bar Styles --- */
+.logo-bar {
+  
+  width: 100%; 
+  min-height: 90px; 
+  background-color: var(--primary-teal);
+  opacity: 1; 
+  padding-top: 24px; 
+  padding-bottom: 24px;
+  /* margin-bottom: 10px; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-bar-container {
+  display: flex;
+  max-width: 1440px; 
+  width: 100%;
+  margin: 0 auto;
+
+  padding-left: 120px; 
+  padding-right: 120px;
+
+  justify-content: space-between; 
+  align-items: center;
+}
+
+.logo-item img {
+  
+  width: 170px; 
+  height: 45px; 
+  object-fit: contain;
+  opacity: 1;
+  
+
+  
 }
 
 /*!note: responsive-------------------------------------------- */
