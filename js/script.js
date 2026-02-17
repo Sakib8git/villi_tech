@@ -5,9 +5,11 @@ const bookButtons = document.querySelectorAll(".book-now");
 menuToggle.addEventListener("click", () => {
   navList.classList.toggle("active");
 });
-// book now btn 
+// book now btn
 bookButtons.forEach((button) => {
   button.addEventListener("click", () => {
     alert("hi");
   });
 });
+
+

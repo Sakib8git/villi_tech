@@ -762,7 +762,7 @@ body {
 /*! testi part--------------------- */
 /* --- Testimonial Marquee Styles --- */
 .testimonials-section {
-  padding: 80px 0;
+  /* padding: 80px 0; */
   overflow: hidden; 
   max-width: var(--container-width);
   margin: 0 auto;
@@ -843,6 +843,76 @@ body {
   margin: 0;
 }
 
+/*! faq part */
+/* --- FAQ Section Styles --- */
+.faq-section {
+  background-color: #E6F9F9; /* লাইট ব্যাকগ্রাউন্ড */
+  padding: 100px 0;
+  
+}
+
+.faq-container {
+  display: flex;
+  gap: 80px;
+  align-items: flex-start;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0px 120px;
+}
+
+.faq-left {
+  flex: 1;
+  max-width: 400px;
+}
+
+.faq-right {
+  flex: 1.5;
+}
+
+/* FAQ Item Style */
+.faq-item {
+  border-bottom: 1px solid #A0AEC0; /* ডিভাইডার লাইন */
+  padding: 24px 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 700;
+  color: #1A202C;
+}
+
+.arrow-icon {
+  font-style: normal;
+  font-size: 24px;
+  transition: transform 0.3s ease;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  margin-top: 0;
+}
+
+.faq-answer p {
+  color: #4A5568;
+  line-height: 1.6;
+  padding-top: 15px;
+}
+
+/* Active State */
+.faq-item.active .faq-answer {
+  max-height: 200px;
+}
+
+.faq-item.active .arrow-icon {
+  transform: rotate(0deg); 
+}
 
 
 
@@ -1170,8 +1240,60 @@ body {
 
 /* testi */
 .testimonials-section {
-  
   padding:  10px;
+}
+
+
+
+/*! faq */
+/* --- FAQ Responsive (Mobile View) --- */
+@media screen and (max-width: 992px) {
+  .faq-section {
+    padding: 40px 20px; 
+  }
+.faq-hilight{
+  color: var(--primary-teal);
+  line-height: 1.2;
+}
+  .faq-container {
+    display: flex;
+    flex-direction: column; 
+    gap: 30px;
+    align-items: center; 
+    text-align: center;
+    padding: 10px;
+    
+  }
+
+  .faq-left {
+    max-width: 100%;
+    order: 1;
+  }
+
+ 
+  .faq-left .btn {
+    display: none; 
+  }
+
+  .faq-right {
+    width: 100%;
+    order: 2; 
+    text-align: left; 
+  }
+
+  
+  .faq-container::after {
+    content: "Contact us";
+    order: 3; 
+    display: inline-block;
+    padding: 12px 32px;
+    background-color: #00C4CC;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+  }
 }
 }
 
