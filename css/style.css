@@ -383,14 +383,6 @@ p{
   object-fit: contain;
 }
 
-@keyframes scroll-left {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
 
 /*! program part------------------------- */
 /* --- Affiliate Section Styles --- */
@@ -782,14 +774,7 @@ p{
   animation-play-state: paused;
 }
 
-@keyframes marqueeScroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
+
 
 .testimonial-card {
   width: 519px;
@@ -844,7 +829,7 @@ p{
 }
 
 /*! faq part */
-/* --- FAQ Section Styles --- */
+
 .faq-section {
   background-color: #e6f9f9;
   padding: 100px 0;
@@ -918,7 +903,7 @@ p{
 }
 
 /*! contact us part ----------------*/
-/* --- Contact Section Styles --- */
+
 .contact-section {
   padding: 80px 120px;
   background-color: #ffffff;
@@ -960,7 +945,7 @@ p{
   padding: 24px;
   background: #ffffff;
   border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); /* হালকা শ্যাডো */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); 
 }
 
 .info-icon {
@@ -979,13 +964,14 @@ p{
 
 .info-text h4 {
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 500;
   margin-bottom: 4px;
 }
 
 .info-text p {
-  font-size: 14px;
+  font-size: 16px;
   color: #718096;
+  font-weight: 400;
 }
 
 /* frm r8  */
@@ -1083,7 +1069,7 @@ form textarea {
   margin-bottom: 30px;
 }
 
-/* কন্টাক্ট লিস্ট */
+
 .footer-contact-list {
   display: flex;
   flex-direction: column;
