@@ -6,7 +6,7 @@
     <title>villi task</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="shortcut icon" href="assets/icon/fav.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/icon/fav.png" type="image/x-icon" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
@@ -16,16 +16,14 @@
   <body>
     <!--! nAv  -->
     <header class="header">
-      <div class="container header-container">
+      <div class="header-container">
         <div class="logo">
           <img src="assets/logo.png" alt="Lumis Logo" />
         </div>
 
         <nav class="nav">
           <button class="menu-toggle" id="menu-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
+            <img  src="assets/icon/navicn.png" alt="Menu" class="nav-icon-img" />
           </button>
 
           <ul class="nav-list" id="nav-list">
@@ -53,7 +51,7 @@
             <h1 class="hero-title">
               YOUR <span class="highlight">HIGH-MOVING</span> INSURANCE SOLUTION
             </h1>
-            <p class="hero-description subtext">
+            <p class=" subtext">
               Lorem ipsum dolor sit amet consectetur. Lobortis massa urna
               dapibus amet massa ullamcorper eget facilisi. Velit ultricies.
             </p>
@@ -110,7 +108,7 @@
               Why <span class="highlight">partner with</span> us?
             </h2>
             <div class="title-underline"></div>
-            <p class="partner-description">
+            <p class="subtext subtext-part">
               Lorem ipsum dolor sit amet consectetur. Lobortis massa urna
               dapibus amet massa ullamcorper eget facilisi. Velit ultricies.
             </p>
@@ -203,7 +201,7 @@
               <span class="highlight">How Our Affiliate</span> affiliate
               gallarys
             </h2>
-            <p class="section-subtitle">
+            <p class="section-subtitle ">
               Lorem ipsum dolor sit amet consectetur. Ornare in imperdiet
               integer integer felis et aliquam elit dolor. Diam etiam quis
               feugiat facilisi malesuada proin ac ac.
@@ -292,7 +290,7 @@
         </div>
       </section>
       <!-- get paid sec -->
-      <section class="get-paid section-wrapper">
+      <section class="get-paid r">
         <div class="get-paid-container">
           <div class="get-paid-banner">
             <img
@@ -328,7 +326,7 @@
         </div>
       </section>
       <!-- choise part -->
-      <section class="choice section-wrapper">
+      <section class="choice ">
         <div class="container choice-container">
           <!-- Text Area -->
           <div class="choice-content">
@@ -336,7 +334,7 @@
               <span class="highlight">Partnering</span> With us, its The Right
               Choice.
             </h2>
-            <p class="choice-description">
+            <p class="choice-description subtext">
               Lorem ipsum dolor sit amet consectetur. Lobortis massa urna
               dapibus amet massa ullamcorper eget facilisi. Velit ultricies.
             </p>
@@ -355,7 +353,7 @@
       </section>
 
       <!-- work gallary part -->
-      <section class="section-wrapper">
+      <section class="">
         <div class="gallery-container">
           <div class="gallery-text-center">
             <h2 class="affiliate-header section-title">
@@ -403,13 +401,13 @@
       </section>
 
       <!-- testimonial part -->
-      <section class="testimonials-section section-wrapper">
+      <section class="testimonials-section ">
         <div class="">
           <div class="gallery-text-center">
             <h2 class="affiliate-header section-title">
               Discover <span class="highlight">How Our Affiliate</span> gallarys
             </h2>
-            <p class="section-subtitle">
+            <p class="section-subtitle subtext">
               Lorem ipsum dolor sit amet consectetur. Ornare in imperdiet
               integer integer felis et aliquam elit dolor. Diam etiam quis
               feugiat facilisi malesuada proin ac ac.
@@ -427,7 +425,26 @@
                 </p>
                 <div class="client-info">
                   <img
-                    src="assets/client1.jpg"
+                    src="assets/clint.jpg"
+                    alt="Client"
+                    class="client-img"
+                  />
+                  <div>
+                    <h4 class="client-name">Alax Helex</h4>
+                    <p class="client-role">Operations Director</p>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p class="review-text">
+                  Lorem ipsum dolor sit amet consectetur. Tristique molestie
+                  feugiat ornare in morbi nunc fringilla. Bibendum urna diam
+                  tincidunt elementum tristique placerat nisl egestas nunc.
+                </p>
+                <div class="client-info">
+                  <img
+                    src="assets/clint.jpg"
                     alt="Client"
                     class="client-img"
                   />
@@ -447,7 +464,7 @@
                 </p>
                 <div class="client-info">
                   <img
-                    src="assets/client2.jpg"
+                    src="assets/clint.jpg"
                     alt="Client"
                     class="client-img"
                   />
@@ -470,7 +487,7 @@
               Frequently <span class="faq-hilight"> Asked Questions</span>
             </h2>
 
-            <p class="section-subtitle">
+            <p class="section-subtitle ">
               Lorem ipsum dolor sit amet Lobortis massa urna dapibus.
             </p>
             <button class="btn btn-primary">Contact us</button>
@@ -568,7 +585,7 @@
             style="background-image: url(&quot;assets/contactUsBG.png&quot;)"
           >
             <div class="contact-form-card">
-              <h3>We provide best services. Need help?</h3>
+              <h3 class="form-title">We provide best services. Need help?</h3>
               <form id="contactForm">
                 <div class="form-row">
                   <input type="text" placeholder="First Name*" required />
@@ -588,7 +605,7 @@
     </main>
     <!-- footer -->
     <footer class="footer-section">
-      <div class=" footer-container">
+      <div class="footer-container">
         <div class="footer-column logo-info">
           <img src="assets/logo.png" alt="Logo" class="footer-logo" />
           <div class="footer-contact-list">
@@ -641,6 +658,12 @@
         </div>
       </div>
     </footer>
+    <!-- js script -->
     <script src="js/script.js"></script>
+    <!-- Calendly badge widget begin -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<!-- <script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/worksakib30', text: 'Schedule time with me', color: '#0ce3d6', textColor: '#ffffff', branding: true }); }</script> -->
+<!-- Calendly badge widget end -->
   </body>
 </html>
