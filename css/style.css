@@ -23,7 +23,7 @@ h1 {
   font-family: var(--font-main);
   font-weight: 900;
 }
-p{
+p {
   font-family: var(--font-secondary);
 }
 .subtext {
@@ -60,6 +60,8 @@ p{
 }
 /* contact btn */
 .btn-contact {
+  height: 40px;
+  width: 120px;
   font-family: var(--font-secondary);
   text-decoration: none;
   color: #00b4b4;
@@ -182,6 +184,21 @@ p{
 }
 /* vook Now  btn */
 .btn-primary {
+  width: 138px;
+  height: 48px;
+  font-family: var(--font-secondary);
+  font-weight: 600;
+  background-color: var(--primary-teal);
+  color: white;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn-primary2 {
+  width: 140px;
+  height: 48px;
   font-family: var(--font-secondary);
   font-weight: 600;
   background-color: var(--primary-teal);
@@ -382,7 +399,6 @@ p{
   height: 45px;
   object-fit: contain;
 }
-
 
 /*! program part------------------------- */
 /* --- Affiliate Section Styles --- */
@@ -774,8 +790,6 @@ p{
   animation-play-state: paused;
 }
 
-
-
 .testimonial-card {
   width: 519px;
   height: 317px;
@@ -907,7 +921,6 @@ p{
 .contact-section {
   padding: 80px 120px;
   background-color: #ffffff;
-  
 }
 
 .contact-container {
@@ -945,7 +958,7 @@ p{
   padding: 24px;
   background: #ffffff;
   border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); 
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
 .info-icon {
@@ -1069,7 +1082,6 @@ form textarea {
   margin-bottom: 30px;
 }
 
-
 .footer-contact-list {
   display: flex;
   flex-direction: column;
@@ -1116,6 +1128,8 @@ form textarea {
 }
 
 .subscribe-box {
+  max-height: 48px;
+  min-width: 374px;
   display: flex;
   background-color: #e0f7f9;
   border-radius: 8px;
@@ -1174,4 +1188,3 @@ form textarea {
   transform: translateY(-3px);
   filter: brightness(1) invert(0);
 }
-
