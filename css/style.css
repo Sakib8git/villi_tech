@@ -415,7 +415,7 @@ h1 {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  /* gap: 48px; */
   align-items: center;
 }
 
@@ -497,7 +497,8 @@ h1 {
 .get-paid {
   width: 100%;
   /* min-height: 892px;  */
-  background-color: #ffffff;
+  background-color: #fafafa;
+  padding: 80px;
   /* padding: 80px 120px; */
   opacity: 1;
 }
@@ -544,7 +545,9 @@ h1 {
   padding: 40px;
   text-align: center;
 }
-
+.banner-text {
+  margin-top: -130px;
+}
 .banner-text h2 {
   font-family: var(--font-main);
   font-size: 24px;
@@ -616,7 +619,6 @@ h1 {
   width: 100%;
 }
 
-/* Image Area */
 .choice-image {
   width: 50%;
   flex-shrink: 0;
@@ -637,7 +639,6 @@ h1 {
   object-fit: cover;
 }
 
-/* Play Button Overlay */
 .choice-play-button {
   position: absolute;
   top: 50%;
@@ -645,8 +646,11 @@ h1 {
   transform: translate(-50%, -50%);
   cursor: pointer;
 }
+.play-svg {
+  filter: brightness(0) invert(1); 
+  
+}
 
-/* Text Area */
 .choice-content {
   width: 50%;
   flex-shrink: 0;
@@ -713,7 +717,7 @@ h1 {
 
 .work-gallery-item img {
   width: 100%;
-  height: 250px; /* ডিফল্ট হাইট */
+  height: 250px; 
   object-fit: cover; /* */
   display: block;
   transition: transform 0.3s ease;
@@ -853,8 +857,7 @@ h1 {
 }
 
 .faq-item {
-  border-bottom: 1px solid #a0aec0;
-  padding: 24px 0;
+  padding: 0;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -867,8 +870,8 @@ h1 {
   font-size: 20px;
   font-weight: 700;
   color: #1a202c;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 5px;
+  padding-bottom: 40px;
 }
 
 .arrow-icon {
@@ -881,14 +884,16 @@ h1 {
   font-family: var(--font-secondary);
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease-out;
+
   margin-top: 0;
 }
 
 .faq-answer p {
+  border-bottom: 1px solid #a0aec0;
   color: #4a5568;
   line-height: 1.6;
-  padding-top: 15px;
+  padding-top: -35px;
+  padding-bottom: 16px;
 }
 
 /* Active State */
@@ -1138,6 +1143,7 @@ form textarea {
 
 .subscribe-btn img {
   width: 20px;
+  filter: brightness(0) invert(1);
 }
 
 /* ফুটার বটম */
@@ -1162,10 +1168,12 @@ form textarea {
   width: 24px;
   height: 24px;
   transition: transform 0.3s;
+  filter: brightness(0) invert(1);
 }
 
 .social-icons img:hover {
   transform: translateY(-3px);
+  filter: brightness(1) invert(0);
 }
 
 /*!note: responsive-------------------------------------------- */
@@ -1279,7 +1287,7 @@ form textarea {
     line-height: 1.5;
   }
 
-  /*!------------------------- partner part */
+  /**------------------------- partner part */
   .partner-container {
     flex-direction: column;
     padding: 40px 20px;
@@ -1332,7 +1340,7 @@ form textarea {
     font-size: 14px;
   }
 
-  /*! tape---part-------------------------- */
+  /** tape---part-------------------------- */
 
   .logo-bar {
     width: 100%;
@@ -1357,7 +1365,7 @@ form textarea {
     object-fit: contain;
   }
 
-  /*! program part------------- */
+  /** program part------------- */
 
   .section-title {
     font-family: var(--font-secondary);
@@ -1419,7 +1427,9 @@ form textarea {
   .get-paid-banner {
     height: 300px;
   }
-
+  .banner-text {
+    margin-top: 0px;
+  }
   .banner-text h2,
   .get-paid-footer h3 {
     font-size: 18px;
@@ -1534,35 +1544,35 @@ form textarea {
 
   /* Lt image */
   .work-gallery-column:nth-child(1) .work-gallery-item:nth-child(1) img {
-    height: 136px !important; 
+    height: 136px !important;
     width: 100% !important;
   }
   .work-gallery-column:nth-child(1) .work-gallery-item:nth-child(2) img {
-    height: 136px !important; 
+    height: 136px !important;
     width: 100% !important;
   }
 
   /* mid img */
   .work-gallery-column:nth-child(2) .work-gallery-item:nth-child(2) img {
-    height: 94px !important; 
+    height: 94px !important;
     width: 100% !important;
   }
   .work-gallery-column:nth-child(2) .work-gallery-item:nth-child(1) img {
-    height: 94px !important; 
+    height: 94px !important;
     width: 100% !important;
   }
   .work-gallery-column:nth-child(2) .work-gallery-item:nth-child(3) img {
-    height: 136px !important; 
+    height: 136px !important;
     width: 100% !important;
   }
 
   /* R8 img */
   .work-gallery-column:nth-child(3) .work-gallery-item:nth-child(1) img {
-    height: 136px !important; 
+    height: 136px !important;
     width: 100% !important;
   }
   .work-gallery-column:nth-child(3) .work-gallery-item:nth-child(2) img {
-    height: 136px !important; 
+    height: 136px !important;
     width: 100% !important;
   }
 
