@@ -1089,8 +1089,9 @@ form textarea {
 }
 
 .footer-column h3 {
-  font-size: 18px;
-  font-weight: 700;
+  /* font-family: var(--font-secondary); */
+  font-size: 20px;
+  font-weight: 500;
   margin-bottom: 25px;
 }
 
