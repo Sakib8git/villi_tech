@@ -3,9 +3,7 @@
   /* Colors */
   --primary-teal: #00c7b4;
   --bg-light-teal: #e5fffd;
-
-  --text-dark: #1a2b3c;
-  --text-gray: #555;
+  --but-color: #00b4b4 --text-gray: #555;
 
   /* Fonts */
   --font-main: "Inter", sans-serif;
@@ -14,15 +12,16 @@
   --container-width: 1440px;
   --side-padding: 120px;
   --section-padding: 80px;
+  --section-res-padding: 48px;
 }
-/* Reusable Section Wrapper */
+
 .section-wrapper {
   padding: var(--section-padding) 0;
 }
 /*? --------------------custom css-----reuseable--------------------- */
 h1 {
   font-family: var(--font-main);
-  font-weight: 900; /* Inter Black */
+  font-weight: 900;
 }
 
 .subtext {
@@ -404,9 +403,13 @@ h1 {
 /* --- Affiliate Section Styles --- */
 .affiliate {
   width: 100%;
-  min-height: 972px;
+  min-height: 902px;
   background-color: #ffffff;
-  /* padding: 80px 120px; */
+  /* background-color: #ca0101; */
+  /* padding-top: 80px;
+  padding-bottom: 0px;
+  padding-left:  120px;
+  padding-right:  120px; */
   opacity: 1;
 }
 
@@ -647,8 +650,7 @@ h1 {
   cursor: pointer;
 }
 .play-svg {
-  filter: brightness(0) invert(1); 
-  
+  filter: brightness(0) invert(1);
 }
 
 .choice-content {
@@ -676,6 +678,7 @@ h1 {
   max-width: var(--container-width);
   margin: 0 auto;
   padding: 0px 120px;
+  /* background-color: red; */
 }
 .gallery-text-center {
   display: flex;
@@ -689,6 +692,7 @@ h1 {
 .gallery-text-center .section-title {
   max-width: 800px;
   margin-bottom: 16px;
+  /* background-color: red; */
 }
 
 .gallery-text-center .section-subtitle {
@@ -701,34 +705,42 @@ h1 {
   grid-template-columns: repeat(3, 1fr);
   gap: 19px;
   width: 100%;
+  /* background-color: red; */
 }
 
 .work-gallery-column {
   display: flex;
   flex-direction: column;
   gap: 19px;
+  /* background-color: red; */
 }
 
 .work-gallery-item {
   width: 100%;
   overflow: hidden;
-  border-radius: 8px; /* */
+  border-radius: 8px;
 }
 
 .work-gallery-item img {
   width: 100%;
-  height: 250px; 
-  object-fit: cover; /* */
+  height: 250px;
+  object-fit: cover;
   display: block;
   transition: transform 0.3s ease;
 }
 
-/* Left column 1st image */
+/* Lt img */
 .work-gallery-column:nth-child(1) .work-gallery-item:nth-child(1) img {
   height: 354px;
 }
+.work-gallery-column:nth-child(1) .work-gallery-item:nth-child(2) img {
+  height: 354px;
+}
 
-/* Middle column items */
+/* mid img */
+.work-gallery-column:nth-child(2) .work-gallery-item:nth-child(1) img {
+  height: 247px;
+}
 .work-gallery-column:nth-child(2) .work-gallery-item:nth-child(2) img {
   height: 247px;
 }
@@ -736,8 +748,11 @@ h1 {
   height: 354px;
 }
 
-/* Right column 1st image */
+/* R8 img */
 .work-gallery-column:nth-child(3) .work-gallery-item:nth-child(1) img {
+  height: 354px;
+}
+.work-gallery-column:nth-child(3) .work-gallery-item:nth-child(2) img {
   height: 354px;
 }
 
@@ -783,11 +798,14 @@ h1 {
 }
 
 .testimonial-card {
-  width: 380px;
-  background: #ffffff;
+  width: 519px;
+  height: 317px;
+  padding: 32px 24px;
   border: 1px solid #e2e8f0;
+
+  background: #ffffff;
   border-radius: 12px;
-  padding: 30px;
+  /* padding: 30px; */
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
 }
 
@@ -1146,7 +1164,6 @@ form textarea {
   filter: brightness(0) invert(1);
 }
 
-/* ফুটার বটম */
 .footer-divider {
   border: 0;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
@@ -1200,7 +1217,9 @@ form textarea {
   .section-subtitle {
     text-align: center;
   }
-
+  .section-wrapper {
+    padding: var(--section-res-padding) !important;
+  }
   /**--------------------- HEADER */
   .header-container {
     padding: 0 20px;
@@ -1585,6 +1604,13 @@ form textarea {
   .testimonials-section {
     padding: 10px;
   }
+  .testimonial-card {
+    width: 100% !important;
+    max-width: 400px;
+    height: auto !important;
+    min-height: 300px;
+    padding: 24px 16px;
+  }
   /*! faq */
 
   .faq-section {
@@ -1619,6 +1645,7 @@ form textarea {
   }
 
   .faq-container::after {
+    font-family: var(--font-secondary);
     content: "Contact us";
     order: 3;
     display: inline-block;
